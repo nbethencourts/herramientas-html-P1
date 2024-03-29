@@ -1,0 +1,58 @@
+/* Hoja de estilos Heroes del Silencio */ 
+$light-color: rgb(255,255,255)
+$dark-color-opacity: rgba(88,25,20, 0.6)
+/*** Reset ***/
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+/*** Reglas generales ***/
+h1
+    font-size: 2rem
+h2
+    font-size: 1.7rem
+h3
+    font-size: 1.4rem
+h4
+    font-size: 1.1rem
+p
+    font-size: 0.6rem
+ul, ol
+    font-size: 0.5rem   
+a
+    text-decoration: none
+    color: $light-color
+    font-weight: bold
+
+/*** header y menu navegación ***/
+header
+    background-color: $dark-color-opacity
+    .header
+        display: flex
+        align-items: center
+        a img
+            max-width: 64px
+            width: 10vw
+        nav 
+            flex-grow: 1 //para coger el espacio que queda
+            display: inline-block
+            ul 
+                text-align: center
+                list-style-type: none
+                text-transform: uppercase
+                li
+                    margin: 0 0.3rem
+                    display: inline-block
+                    :hover
+                        color: red
+                .active a::before
+                        display: inline-block
+                        vertical-align: middle
+                        content: url(../img/heroes-vino-16x16.png)     
+/*** Portada ***/
+body.home
+    background-image: url(../img/heroes-silencio-2.jpeg)
+    background-repeat: no-repeat
+    background-size: cover
+    height: 100%

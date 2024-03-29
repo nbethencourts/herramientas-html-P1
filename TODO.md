@@ -1,0 +1,1 @@
+- Optimizar imágenes (igual hay un plugin de parcel). En html poner varios srcset
