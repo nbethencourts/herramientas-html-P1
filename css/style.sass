@@ -38,8 +38,14 @@ a
     text-decoration: none
     color: $light-color
     font-weight: bold
-:hover
-    color: $accent-color
+    :hover
+        color: $accent-color
+
+/** multimedia responsive **/
+.img-responsive
+    width: 100%
+    height: auto
+    display: block
 
 /*** header y menu navegación ***/
 header
@@ -95,3 +101,13 @@ body.home
     background-image: url(../img/heroes-silencio-2.jpeg)
     background-repeat: no-repeat
     background-size: cover
+
+/** Categoría ***/
+.flex-covers
+    display: flex
+    flex-direction: row
+    justify-content: center
+    gap: 1rem
+    flex-wrap: wrap
+    article
+        flex: 0 1 20%
