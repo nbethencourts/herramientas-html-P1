@@ -107,7 +107,17 @@ body.home
     display: flex
     flex-direction: row
     justify-content: center
+    align-items: stretch
     gap: 1rem
     flex-wrap: wrap
     article
         flex: 0 1 20%
+
+.band-member
+    display: flex
+    justify-content: center
+    gap: 1rem
+:nth-child(even).band-member .card-content
+        color: red
+        background-color: red
+        order: 1
