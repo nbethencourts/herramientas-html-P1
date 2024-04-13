@@ -117,7 +117,13 @@ body.home
     display: flex
     justify-content: center
     gap: 1rem
+    .card-content,  .card-img
+        flex-basis: 40%
 :nth-child(even).band-member .card-content
         color: red
         background-color: red
         order: 1
+:nth-child(odd).band-member .card-img
+        color: red
+        background-color: green
+        order: 2
