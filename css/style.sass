@@ -33,7 +33,7 @@ h4
 p
     font-size: 0.6rem
 ul, ol
-    font-size: 0.5rem   
+    font-size: 0.4rem   
 a
     text-decoration: none
     color: $light-color
@@ -46,7 +46,11 @@ a
     width: 100%
     height: auto
     display: block
-
+iframe
+    width: 100%
+    height: auto
+    aspect-ratio: 16/9
+    border: 0
 /*** header y menu navegación ***/
 header
     background-color: $dark-color-opacity
@@ -95,7 +99,11 @@ footer
         content: "|"
     .legal li:last-child::after
         content: ""
-
+/**** Contenidos acotados *****/
+.container-fluid
+    width: 100%
+    padding-right: 1rem
+    padding-left: 1rem
 /*** Portada ***/
 body.home
     background-image: url(../img/heroes-silencio-2.jpeg)
@@ -127,3 +135,6 @@ body.home
         color: red
         background-color: green
         order: 2
+.grid-videos>article
+    margin-bottom: 3rem
+    border: 1px solid blue

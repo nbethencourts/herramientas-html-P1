@@ -1,1 +1,2 @@
 - Optimizar imágenes (igual hay un plugin de parcel). En html poner varios srcset
+- La discografía, hay que reducir el número de carátulas por línea según el tamaño de la ventana.
