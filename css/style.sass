@@ -1,7 +1,13 @@
 /* Hoja de estilos Heroes del Silencio */ 
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap')
+
 $light-color: rgb(255,255,255)
-$dark-color-opacity: rgba(88,25,20, 0.6)
+// $dark-color-opacity: rgba(88,25,20, 0.6)
+$dark-color-opacity: rgb(92, 22, 20, 0.9)
 $accent-color: rgba(255,0,0,1)
+$cursive-font: "Rock Salt", cursive
+$sans-serif-font: "Roboto Condensed", sans-serif
+$sans-serif-font-background: "Jersey 10 Charted", sans-serif
 
 /*** Reset ***/
 *
@@ -22,6 +28,9 @@ footer
     flex-shrink: 0
 
 /*** Reglas generales ***/
+body
+    font-family: $sans-serif-font
+    font-weight: 400
 h1
     font-size: 2rem
 h2
@@ -33,7 +42,7 @@ h4
 p
     font-size: 0.6rem
 ul, ol
-    font-size: 0.4rem   
+    font-size: 0.7rem   
 a
     text-decoration: none
     color: $light-color
@@ -92,25 +101,43 @@ footer
         display: flex
         padding: .3rem .6rem
         li
+            font-size: 0.5rem
             padding: 0.1rem .4rem
             img:hover
                 opacity: 0.7
+            a
+                display: inline-block
     .legal li::after
+        color: white
         content: "|"
+        padding-left: 0.5rem
     .legal li:last-child::after
         content: ""
+        padding-right: 0
+        padding-left: 0
 /**** Contenidos acotados *****/
 .container-fluid
     width: 100%
     padding-right: 1rem
     padding-left: 1rem
-/*** Portada ***/
-body.home
+/*** página de Portada ***/
+main
     background-image: url(../img/heroes-silencio-2.jpeg)
     background-repeat: no-repeat
-    background-size: cover
+    background-size: contain
+    background-position: top
 
-/** Categoría ***/
+@media (min-width: 768px)
+    main
+        background-image: url(../img/heroes-silencio-2.jpeg)
+        background-size: cover
+        background-position: center
+    li
+        font-size: 1.4rem
+    footer ul li
+            font-size: 0.7rem
+    
+/** Página de Categoría ***/
 .flex-covers
     display: flex
     flex-direction: row
