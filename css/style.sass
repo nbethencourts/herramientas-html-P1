@@ -121,14 +121,14 @@ footer
     padding-right: 1rem
     padding-left: 1rem
 /*** página de Portada ***/
-main
+.home main
     background-image: url(../img/heroes-silencio-2.jpeg)
     background-repeat: no-repeat
     background-size: contain
     background-position: top
 
 @media (min-width: 768px)
-    main
+    .home main
         background-image: url(../img/heroes-silencio-2.jpeg)
         background-size: cover
         background-position: center
@@ -143,10 +143,10 @@ main
     flex-direction: row
     justify-content: center
     align-items: stretch
-    gap: 1rem
+    gap: 2.5rem
     flex-wrap: wrap
     article
-        flex: 0 1 20%
+        flex: 0 1 40%
 
 .band-member
     display: flex
@@ -165,3 +165,9 @@ main
 .grid-videos>article
     margin-bottom: 3rem
     border: 1px solid blue
+
+@media (min-width: 768px)
+    .flex-covers
+        gap: 1.5rem
+        article
+            flex: 0 1 20%
