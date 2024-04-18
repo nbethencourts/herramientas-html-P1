@@ -148,20 +148,20 @@ footer
     article
         flex: 0 1 40%
 
-.band-member
-    display: flex
-    justify-content: center
-    gap: 1rem
-    .card-content,  .card-img
-        flex-basis: 40%
-:nth-child(even).band-member .card-content
-        color: red
-        background-color: red
-        order: 1
-:nth-child(odd).band-member .card-img
-        color: red
-        background-color: green
-        order: 2
+// .band-member
+//     display: flex
+//     justify-content: center
+//     gap: 1rem
+//     .card-content,  .card-img
+//         flex-basis: 20%
+// :nth-child(even).band-member .card-content
+//         color: red
+//         background-color: red
+//         order: 1
+// :nth-child(odd).band-member .card-img
+//         color: red
+//         background-color: green
+//         order: 2
 .grid-videos>article
     margin-bottom: 3rem
     border: 1px solid blue
@@ -171,3 +171,17 @@ footer
         gap: 1.5rem
         article
             flex: 0 1 20%
+    .band-member
+        display: flex
+        justify-content: center
+        gap: 1rem
+        .card-content,  .card-img
+            flex-basis: 40%
+    :nth-child(even).band-member .card-content
+        color: red
+        background-color: red
+        order: 1
+    :nth-child(odd).band-member .card-img
+        color: red
+        background-color: green
+        order: 2

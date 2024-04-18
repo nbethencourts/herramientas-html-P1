@@ -1,3 +1,5 @@
 - Optimizar imágenes (igual hay un plugin de parcel). En html poner varios srcset
 - La discografía, hay que reducir el número de carátulas por línea según el tamaño de la ventana.- Pasar las fechas a formato <time datetime="2016-01-20">20 January 2016</time>
 - Hacer un breadcrump
+#Portada
+- Poner un título de Héroes del Silencio
