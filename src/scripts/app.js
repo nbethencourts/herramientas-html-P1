@@ -1,4 +1,3 @@
-console.log('Prueba');
 const btnLetras = document.querySelectorAll('.btnLetra');
 
 btnLetras.forEach(btn => {
