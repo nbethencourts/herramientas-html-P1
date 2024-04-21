@@ -288,26 +288,31 @@ footer
         li
             padding: 1rem
             border-bottom: 2px solid $light-bg-color
-        // .show::after
-        //     content: '\25BC'
-        //     padding-left: .5rem
-        //     background-color: $accent-color
-        // .hide::after
-        //     content: '\25B2'
-        .show
-        .icon
-            width: 1rem
-            height: 1rem
-            margin-left: 1.5rem  
         .btnLetra
             background-color: $button-color
             padding: .1rem .4rem
             border-radius: 4px 
             :hover
                 background-color: $accent-color
-
-
+.flex-otros
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: stretch
+    gap: 1.5rem
+    flex-wrap: wrap
+    article
+        flex: 0 1 40%
+        .card-img img:hover
+            opacity: 0.7
+    .card-content
+        // padding: 0.7rem
+        text-align: center
+        time
+            font-weight: 200
 @media (min-width: 768px)
     .detalle-album
         time
             font-size: 1.8rem
+    .flex-otros article
+        flex: 0 1 20%
