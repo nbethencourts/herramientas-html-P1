@@ -3,3 +3,4 @@
 - Hacer un breadcrump
 #Portada
 - Poner un título de Héroes del Silencio
+- Añadir algo de typescript por ejemplo. (que se vea la letra)
