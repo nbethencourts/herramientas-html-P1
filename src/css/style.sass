@@ -247,3 +247,41 @@ footer
         order: 1
     :nth-child(odd).band-member .card-img
         order: 2
+
+/** Página de album avalancha/detalle ***/
+.detalle-album
+    h1
+        font-family: $cursive-font
+        margin-left: 1rem
+    h2
+        padding: 1rem 0 1.3rem 0
+        text-align: center
+        font-family: $cursive-font
+        color: $accent-color
+    .card-album
+        background-color: $light-bg-color
+        margin-bottom: 1rem 
+    figure
+        margin: 0 auto
+        max-width: 500px
+    p
+        padding: 1rem
+    .publicacion
+        text-align: center
+        padding: 1rem
+    time
+        color: $accent-color
+        font-family: $cursive-font
+    figcaption
+        text-align: right
+    h3
+        padding: .5rem 0 .3rem 0
+    section
+        padding: 1rem
+        margin: 1rem 0
+    section:nth-child(odd) 
+        background-color: $light-bg-color
+@media (min-width: 768px)
+    .detalle-album
+        time
+            font-size: 1.8rem
