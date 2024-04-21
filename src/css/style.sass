@@ -6,6 +6,7 @@ $light-bg-color: rgb(240, 240, 240)
 $main-color: rgb(41, 43, 44)
 $dark-color-opacity: rgb(0, 0, 0)
 $accent-color:rgb(223, 67, 62)
+$button-color:rgb(135, 38, 34)
 $cursive-font: "Rock Salt", cursive
 $sans-serif-font: "Roboto Condensed", sans-serif
 $sans-serif-font-background: "Jersey 10 Charted", sans-serif
@@ -281,6 +282,31 @@ footer
         margin: 1rem 0
     section:nth-child(odd) 
         background-color: $light-bg-color
+    ul
+        margin-left: 1.8rem
+        list-style-type: none
+        li
+            padding: 1rem
+            border-bottom: 2px solid $light-bg-color
+        // .show::after
+        //     content: '\25BC'
+        //     padding-left: .5rem
+        //     background-color: $accent-color
+        // .hide::after
+        //     content: '\25B2'
+        .show
+        .icon
+            width: 1rem
+            height: 1rem
+            margin-left: 1.5rem  
+        .btnLetra
+            background-color: $button-color
+            padding: .1rem .4rem
+            border-radius: 4px 
+            :hover
+                background-color: $accent-color
+
+
 @media (min-width: 768px)
     .detalle-album
         time
