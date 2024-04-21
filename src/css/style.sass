@@ -41,8 +41,8 @@ h3
     font-size: 1.4rem
 h4
     font-size: 1.1rem
-p
-    font-size: 0.6rem
+p,time
+    font-size: 0.8rem
     line-height: 1.5
 ul, ol
     font-size: 0.7rem 
@@ -59,7 +59,7 @@ a
         font-size: 2.6rem
     h3
         font-size: 2rem
-    li, p
+    li, p, time
         font-size: 1.2rem
     footer ul li
             font-size:1rem
@@ -210,7 +210,21 @@ footer
         text-align: center
         time
             font-weight: 200
-            font-size: 1rem
+.band-member
+    background-color: $dark-color-opacity
+    color: $light-color
+    margin: 2rem 0
+    padding: 0.5rem 0
+    figcaption
+        font-weight: 200
+        text-align: center
+    .card-content
+        padding: 1rem
+        p
+            font-weight: 200
+        .member
+            font-weight: 700
+
 .grid-videos>article
     margin-bottom: 3rem
     border: 1px solid blue
@@ -227,10 +241,6 @@ footer
         .card-content,  .card-img
             flex-basis: 40%
     :nth-child(even).band-member .card-content
-        color: red
-        background-color: red
         order: 1
     :nth-child(odd).band-member .card-img
-        color: red
-        background-color: green
         order: 2
