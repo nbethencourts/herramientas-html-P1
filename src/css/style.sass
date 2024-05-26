@@ -144,11 +144,15 @@ footer
     background-color: $light-color
     .article
         background-color: $light-color
-@media (min-width: 768px)
+@media (max-width: 799px)
+    .art-direction img
+        margin: 0 auto
+        max-width: 500px
+@media (min-width: 768px) and (max-width: 991px)
     .container-fluid
         padding-right: 3.5rem
         padding-left: 3.5rem
-@media (min-width: 992px)
+@media (min-width: 992px) and (max-width: 1199px)
     .container-fluid
         padding-right: 4.5rem
         padding-left: 4.5rem
@@ -157,6 +161,12 @@ footer
         max-width: 1140px
         margin-right: auto
         margin-left: auto
+    .container-fluid-100
+        max-width: 1140px
+        margin-right: auto
+        margin-left: auto
+        padding-right: 0
+        padding-left: 0
 /*** página de Portada ***/
 .home main
     margin: 0
@@ -287,6 +297,9 @@ footer
         background-color: $light-bg-color
         margin-bottom: 1rem
     figure
+        margin: 0 auto
+        max-width: 500px
+    .fallback-img
         margin: 0 auto
         max-width: 500px
     p

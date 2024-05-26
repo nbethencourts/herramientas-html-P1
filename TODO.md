@@ -7,20 +7,27 @@
 
 # P2
 ## Header
-Cabecera header con título y un pequeño logotipo creado por ti.
+- Cabecera header con título 
+- y un pequeño logotipo creado por ti.
 
 ## Footer
-La web debe contener un pie de página (footer) con enlaces a todas las páginas. También debe contener un recurso gráfico (por ejemplo, el logo) que quede bien integrado en la página.
+- La web debe contener un pie de página (footer) con enlaces a todas las páginas. 
+- También debe contener un recurso gráfico (por ejemplo, el logo) que quede bien integrado en la página.
 
 ## Imágenes
 - Todas las imágenes de la web deben ser responsive y al menos debe haber una imagen por cada técnica de imágenes responsive.
+  -  ofrecer el navegador varias versiones de una imagen, y que sea el mismo navegador quien seleccione aquella más adecuada en función de varios parámetros.
+     - El atributo srcset (source set) del tag img combinando el atributo sizes.
+       - Resolution switching (tamaño): consiste en ofrecer imágenes del tamaño adecuado al tamaño del dispositivo en el que la imagen se vaya a visualizar.  
+       - Resolution switching (dpi):consiste en ofrecer imágenes con mayor resolución en dispositivos que tengan una mayor densidad de píxeles. Es la mejor opción cuando la misma imagen se va a mostrar en dispositivos diferentes con el mismo tamaño.
+       - Dirección de arte: Es la mejor opción cuando necesitamos retocar la imagen en función del dispositivo en el que se va a mostrar.
 - La web debe ser responsive y se debe visualizar correctamente desde cualquier dispositivo moderno (teléfono, tableta, ordenador, etc.). Como vimos en el Módulo 3, esto implica que los contenidos multimedia (en especial imágenes) deben adecuarse al dispositivo que consulta la web: es importante que se adapten, como mínimo, al tamaño de la pantalla. De nuevo, y sabiendo que habitualmente queremos un diseño tan limpio como sea posible, intentad desarrollar una página que le permita enseñar lo que se ha aprendido.
 
 ## Animaciones
-La web debe tener algunos elementos animados mediante transiciones y animaciones: ya sean imágenes, enlaces, textos o cualquier otro recurso. La animación debe estar hecha en CSS. ¡Sed creativos!
+- La web debe tener algunos elementos animados mediante transiciones y animaciones: ya sean imágenes, enlaces, textos o cualquier otro recurso. La animación debe estar hecha en CSS. ¡Sed creativos!
 
 ## Accesibilidad
-La web debe cumplir las reglas básicas WCAG 2.1Links to an external site. A y AA de accesibilidad. En internet existen muchas herramientas que validan que estas reglas se hayan tenido en cuenta, como ACheckerLinks to an external site.. Encontrarás más enlaces en la página del W3CLinks to an external site..
+- La web debe cumplir las reglas básicas WCAG 2.1Links to an external site. A y AA de accesibilidad. En internet existen muchas herramientas que validan que estas reglas se hayan tenido en cuenta, como ACheckerLinks to an external site.. Encontrarás más enlaces en la página del W3CLinks to an external site..
 
 ## Portada
 - Debe haber al menos un recurso gráfico editado con clip-path. ¡Sé creativo! Corta alguna imagen y crea alguna forma relativamente compleja que quede bien integrada en la página.
