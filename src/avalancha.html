@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="header">
-            <a href="home.html"><img src="img/logoHS512.png" alt="logo Heroes del Silencio"></a>
+            <a href="home.html"><img class="img-ratio-1-1" src="img/logoHS128.png" alt="logo Heroes del Silencio"></a>
             <nav>
                 <ul>
                     <li><a href="heroes.html">Héroes del Silencio</a></li>
@@ -37,7 +37,7 @@
                 <h1>Avalancha</h1>
                 <article>
                     <figure class="autowidth">
-                        <img class="img-autowidth" src="img/covers/Enrique-Bunbury-HDS-Guatemala-2007.jpg" alt="Enrique Bunbury en concierto"
+                        <img class="img-ratio-8-6" src="img/covers/Enrique-Bunbury-HDS-Guatemala-2007.jpg" alt="Enrique Bunbury en concierto"
                         srcset="img/covers/Enrique-Bunbury-HDS-Guatemala-2007-320w.webp 320w, 
                         img/covers/Enrique-Bunbury-HDS-Guatemala-2007-480w.webp 480w, 
                         img/covers/Enrique-Bunbury-HDS-Guatemala-2007-640w.webp 640w,
@@ -692,10 +692,42 @@
             </ul>
 
             <h2>Videoclip de Avalancha</h2>
-            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/3wOY9Looa2Q?si=9PeE0o3O1jsmL04n"
+           
+            <iframe loading="lazy" width="560" height="315"
+                src="https://www.youtube.com/embed/3wOY9Looa2Q?si=9PeE0o3O1jsmL04n" 
+                srcdoc="
+                    <style>
+                        * { padding: 0; margin: 0; overflow: hidden; }
+                        html, body { height: 100%; }
+                        img { position: absolute; width: 100%; top: 0; bottom: 0; margin: auto; }
+                        .play-button { 
+                            position: absolute; 
+                            top: 50%; 
+                            left: 50%; 
+                            transform: translate(-50%, -50%); 
+                            width: 68px; 
+                            height: 48px; 
+                            cursor: pointer; 
+                        }
+                        .play-button svg { 
+                            width: 100%; 
+                            height: 100%; 
+                        }
+                    </style>
+                    <a href='https://www.youtube.com/embed/3wOY9Looa2Q?autoplay=1'>
+                        <img src='https://img.youtube.com/vi/3wOY9Looa2Q/hqdefault.jpg' alt='Videoclip de Avalancha'>
+                        <div class='play-button'>
+                            <svg version='1.1' viewBox='0 0 68 48'>
+                                <path class='ytp-large-play-button-bg' d='M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z' fill='#f00'></path>
+                                <path d='M 45,24 27,14 27,34' fill='#fff'></path>
+                            </svg>
+                        </div>
+                    </a>"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
             </article>
             <aside>
                 <h3>Otros álbumes</h3>

@@ -46,9 +46,9 @@ p,time
     font-size: 0.8rem
     line-height: 1.5
 figcaption
-    font-size: 0.6rem
-ul, ol
     font-size: 0.7rem
+ul, ol
+    font-size: 0.8rem
 a
     text-decoration: none
     color: $light-color
@@ -79,6 +79,12 @@ iframe
     height: auto
     aspect-ratio: 16/9
     border: 0
+.img-ratio-8-6
+    aspect-ratio: 8 / 6
+.img-ratio-1-1
+    aspect-ratio: 1 / 1
+.img-ratio-4-3
+    aspect-ratio: 1.33
 /*** header y menu navegación ***/
 header
     background-color: $dark-color-opacity
@@ -223,7 +229,6 @@ footer
         margin-left: 1.5rem
     iframe
         padding: 1rem 0 0.3rem 0
-
 /** Página de publicaciones/Categoría ***/
 .publicaciones
     h1
@@ -379,3 +384,8 @@ footer
                 color: $accent-color
     a
         color: $main-color
+@media (max-width: 480px)
+.enlaces
+    ul
+        li
+            line-height: 2.5
