@@ -7,6 +7,7 @@
     <title>Avalancha - Héroes del Silencio</title>
     <meta name="description" content="Página no oficial del grupo Héroes del Silencio">
     <link rel="shortcut icon" href="img/heroes-512x512.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/style.sass">
 </head>
 
@@ -26,10 +27,11 @@
     <main class="detalle-album">
         <div class="container-fluid-100">
             <picture class="art-direction">
+                <source media="(max-width: 320px)" srcset="img/covers/avalancha-320x320.webp" />
                 <source media="(max-width: 799px)" srcset="img/covers/avalancha-500x500.webp" />
                 <source media="(min-width: 800px)" srcset="img/covers/Heroes-Avalancha-1140x243-fondo.webp" />
-                <img class="img-responsive" src="img/covers/avalancha-500x500.jpeg" alt="Cover album Avalancha"
-                    width="500" height="500" />
+                <img class="img-responsive" src="img/covers/avalancha-500x500.webp" alt="Cover album Avalancha"
+                    width="500" height="500" loading="lazy"/>
             </picture>
         </div>
         <div class="container-fluid">
